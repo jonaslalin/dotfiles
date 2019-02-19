@@ -1,0 +1,11 @@
+[alias]
+	co = checkout
+	slog = log --oneline --graph
+[commit]
+	gpgsign = true
+[gpg]
+	program = C:\\Program Files (x86)\\gnupg\\bin\\gpg.exe
+[user]
+	name = Jonas Lalin
+	email = 1ac6df24@gmail.com
+	signingkey = 0x1F701F8591841C31
