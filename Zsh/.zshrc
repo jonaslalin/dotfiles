@@ -29,5 +29,4 @@ zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
 alias gdb='gdb -q'
-alias gcc='gcc -g -fno-builtin'
 alias ls='ls --color'
