@@ -1,0 +1,25 @@
+--- config.org	2019-03-14 20:16:00.985497296 +0100
++++ config.new	2019-03-14 21:09:59.330549611 +0100
+@@ -301,6 +301,21 @@
+   };
+ };
+ settings = {
+-  core = { real_name = "root"; user_name = "root"; nick = "root"; };
++  core = {
++    real_name = "root";
++    user_name = "root";
++    nick = "root";
++    awaylog_level = "NEVER";
++  };
+   "fe-text" = { actlist_sort = "refnum"; };
++  "fe-common/core" = {
++    autolog = "yes";
++    autolog_level = "MSGS PUBLIC";
++    autolog_path = "~/irclogs/$tag/$0.%m-%d.log";
++    beep_msg_level = "MSGS HILIGHT";
++    hilight_nick_matches_everywhere = "yes";
++    show_names_on_join = "no";
++  };
++  "irc/core" = { skip_motd = "yes"; };
+ };
++ignores = ( { level = "JOINS PARTS QUITS KICKS MODES NICKS"; } );
