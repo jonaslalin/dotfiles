@@ -4,7 +4,8 @@ apt install open-vm-tools open-vm-tools-desktop
 systemctl start run-vmblock\\x2dfuse.mount
 systemctl enable run-vmblock\\x2dfuse.mount
 
-cat <<EOF >//root/Desktop/restart-vm-tools
+perl -pi.bak -e 's/^(?!#)/#/g' /usr/local/sbin/restart-vm-tools
+cat <<EOF >>/usr/local/sbin/restart-vm-tools
 pkill -f "vmtoolsd -n vmusr"
 vmware-user-suid-wrapper 2>/dev/null
 EOF
@@ -20,6 +21,7 @@ curl -O $DOTFILES/Zsh/.zshrc
 
 chsh -s /bin/zsh root
 
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'se')]"
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
 gsettings set org.gnome.software allow-updates false
