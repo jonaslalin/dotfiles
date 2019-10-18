@@ -3,8 +3,12 @@
 	slog = log --oneline --graph
 [commit]
 	gpgsign = true
+[credential]
+	helper = manager
+[fetch]
+	prune = true
 [gpg]
-	program = C:\\Program Files (x86)\\gnupg\\bin\\gpg.exe
+	program = C:/Users/%USERNAME%/AppData/Local/gnupg/bin/gpg.exe
 [user]
 	name = Jonas Lalin
 	email = 1ac6df24@gmail.com
