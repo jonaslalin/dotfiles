@@ -1,0 +1,8 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.suggestSelection": "first",
+    "files.autoSave": "afterDelay",
+    "java.jdt.ls.vmargs": "-javaagent:\"/Users/jonas/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "newUntitledFile"
+}
