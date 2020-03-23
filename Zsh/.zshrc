@@ -1,32 +1,21 @@
-eval $(dircolors)
-
-bindkey -e
-
-autoload -Uz promptinit
-promptinit
-prompt adam1
-
-HISTFILE=~/.zsh_history
-HISTSIZE=50000
-SAVEHIST=10000
+setopt AUTO_CD
 setopt EXTENDED_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_VERIFY
-setopt INC_APPEND_HISTORY_TIME
+setopt NO_BEEP
+setopt SHARE_HISTORY
 
-autoload -Uz compinit
+alias ls='ls -G'
+
+typeset -U path
+path=(~/.npm-global/bin $path)
+
+export LSCOLORS=exfxcxdxbxegedabagacad
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+
+export PGDATA=/Library/PostgreSQL/12/data
+export PGUSER=postgres
+
+autoload -U compinit
 compinit
-setopt ALWAYS_TO_END
-setopt COMPLETE_IN_WORD
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu select
-zstyle ':completion:*' use-compctl false
-zstyle ':completion:*' verbose true
-
-alias gdb='gdb -q'
-alias ls='ls --color'

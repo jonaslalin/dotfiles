@@ -2,14 +2,16 @@
 	co = checkout
 	slog = log --oneline --graph
 [commit]
-	gpgsign = true
+	gpgSign = true
 [credential]
-	helper = manager
+	helper = osxkeychain
 [fetch]
 	prune = true
 [gpg]
-	program = C:/Users/%USERNAME%/AppData/Local/gnupg/bin/gpg.exe
+	program = /usr/local/gnupg-2.2/bin/gpg2
+[tag]
+	forceSignAnnotated = true
 [user]
 	name = Jonas Lalin
 	email = 1ac6df24@gmail.com
-	signingkey = 0x1F701F8591841C31
+	signingKey = 0x1F701F8591841C31
