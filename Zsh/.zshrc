@@ -1,6 +1,8 @@
 setopt AUTO_CD
+setopt AUTO_PUSHD
 setopt EXTENDED_HISTORY
 setopt NO_BEEP
+setopt PUSHD_IGNORE_DUPS
 setopt SHARE_HISTORY
 
 alias ls='ls -G'
