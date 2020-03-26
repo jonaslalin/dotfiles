@@ -7,6 +7,9 @@ setopt SHARE_HISTORY
 
 alias ls='ls -G'
 
+alias python3=/Library/Frameworks/Python.framework/Versions/3.8/bin/python3
+alias pip3=/Library/Frameworks/Python.framework/Versions/3.8/bin/pip3
+
 typeset -U path
 path=(~/.npm-global/bin $path)
 
