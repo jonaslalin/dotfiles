@@ -1,9 +1,15 @@
 {
+    "cSpell.ignoreWords": [
+        "Jsonb"
+    ],
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
     "java.jdt.ls.vmargs": "-javaagent:\"/Users/jonas/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
