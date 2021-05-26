@@ -8,7 +8,9 @@
 [fetch]
 	prune = true
 [gpg]
-	program = /usr/local/bin/gpg2
+	program = /usr/local/bin/gpg
+[pull]
+	ff = only
 [tag]
 	forceSignAnnotated = true
 [user]

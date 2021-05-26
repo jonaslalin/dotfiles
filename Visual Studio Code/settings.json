@@ -1,7 +1,0 @@
-{
-    "editor.renderWhitespace": "all",
-    "extensions.ignoreRecommendations": true,
-    "files.autoSave": "afterDelay",
-    "telemetry.enableTelemetry": false,
-    "workbench.startupEditor": "newUntitledFile"
-}
